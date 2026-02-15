@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head> 
+<body>
+    
+<header class="site-header">
+        <div class="header-container">
+            <h1>🎓 Smart Student Dashboard</h1>
+            <nav class="main-nav">
+                <ul>
+                  <li><a href="#dashboard">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+         <section  id="dashboard" class="dashboard-section">
+           <h2>Welcome to Your Smart Student Dashboard</h2>
+            
+           <!-- Form to Add Subject -->
+            <div class="form-section">
+                <input type="text" id="subjectName" placeholder="Enter Subject Name">
+                <input type="number" id="subjectMarks" placeholder="Enter Marks (out of 100)">
+                <button id="addBtn">Add Subject</button>
+            </div>
+
+            <!-- Table to Display Subjects and Marks -->
+             <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="subjectTable"></tbody>
+                </table>
+            </div>
+
+            <!-- Results Display -->
+            <div class="results-section">
+                <p>Total Percentage: <span id="percentage">0%</span></p>
+                <p>Grade: <span id="grade">-</span></p>
+            </div>
+
+         </section>
+
+
+
+          <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <h2>About This Project</h2>
+            <p>This is a simple student dashboard web app built using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Email: support@studentdashboard.com</p>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Smart Student Dashboard. All rights reserved.</p>
+    </footer>
+
+     
+<script src="js/script.js"></script>
+
+</body>
+</html>
