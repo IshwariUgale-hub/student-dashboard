@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Student Dashboard</title>
+<link rel="stylesheet" href="css/hmstyle.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h2>🎓 Smart Dashboard</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleMode()">🌙</button>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+<div class="container">
+
+<!-- PROFILE -->
+<div class="dashboard-box profile-box">
+<h3>👤 Student Profile</h3>
+
+<div class="profile-top">
+    <img id="profilePreview" src="images/default-profile.jpg" width="120">
+    <input type="file" id="profilePicInput">
+</div>
+
+<div class="profile-details" id="profileDetails"></div>
+
+<button id="editBtn">Edit</button>
+<button id="saveBtn" style="display:none;">Save</button>
+
+</div>
+
+<!-- SUBJECT INPUT -->
+<div class="dashboard-box">
+<h3>➕ Add Subject</h3>
+<input type="text" id="subject" placeholder="Subject">
+<input type="number" id="marks" placeholder="Marks">
+<input type="number" id="attendance" placeholder="Attendance %">
+<button onclick="addSubject()">Add</button>
+</div>
+
+<!-- SUBJECT RECORDS TABLE -->
+<div class="dashboard-box">
+<h3>📚 Subject Records</h3>
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Attendance</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="subjectTable">
+        <!-- Data will come from JS -->
+    </tbody>
+</table>
+
+</div>
+
+<!-- PERFORMANCE OVERVIEW -->
+<div class="dashboard-box">
+<h3>📊 Performance Overview</h3>
+<canvas id="pieChart"></canvas>
+<h4>Total Percentage: <span id="percentage">0</span>%</h4>
+<h4>Grade: <span id="grade">-</span></h4>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container about-section">
+<h2>About Smart Dashboard</h2>
+<p>Track performance, monitor attendance, and visualize progress easily.</p>
+<div class="about-images">
+<img src="images/about1.jpg" width="200">
+<img src="images/about2.png" width="200">
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container contact-box">
+<h2>Contact Us</h2>
+<div class="contact-card">
+<p>📧 support@smartdashboard.com</p>
+<p>📞 +91 9876543210</p>
+<p>📍 Pune, India</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Smart Student Dashboard
+</footer>
+
+<script src="js/hmjs.js"></script>
+</body>
+</html>

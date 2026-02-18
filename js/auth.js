@@ -81,7 +81,8 @@ loginForm.addEventListener("submit", function(e){
     if(email === storedUser.email && password === storedUser.password){
         alert("Login Successful!");
         clearFields();
-        window.location.href = "home.html";
+        window.location.href ="dashboard.html";
+
     } else {
         alert("Invalid Email or Password!");
     }
